@@ -29,16 +29,16 @@ imagesRef.classList.add('list', 'wrapper');
 
 const elementLi1 = document.createElement('li');
 const elementImg1 = document.createElement('img');
-elementImg1.setAttribute('url', 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+elementImg1.setAttribute('src', 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200');
 elementImg1.setAttribute('alt', 'White and Black Long Fur Cat');
 elementLi1.append(elementImg1);
 
 
 const elementLi2 = document.createElement('li');
 const elementImg2 = document.createElement('img');
-elementImg2.setAttribute('url', 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+elementImg2.setAttribute('src', 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200');
 elementImg2.setAttribute('alt', 'Orange and White Koi Fish Near Yellow Koi Fish');
-elementLi2.insertAdjacentHTML('afterbegin', elementImg2);
+elementLi2.append(elementImg2);
 
 
 const elementLi3 = document.createElement('li');
