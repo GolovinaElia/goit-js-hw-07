@@ -31,21 +31,21 @@ const elementLi1 = document.createElement('li');
 const elementImg1 = document.createElement('img');
 elementImg1.setAttribute('src', 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200');
 elementImg1.setAttribute('alt', 'White and Black Long Fur Cat');
-elementLi1.append(elementImg1);
+elementLi1.insertAdjacentElement('afterbegin', elementImg1);
 
 
 const elementLi2 = document.createElement('li');
 const elementImg2 = document.createElement('img');
 elementImg2.setAttribute('src', 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200');
 elementImg2.setAttribute('alt', 'Orange and White Koi Fish Near Yellow Koi Fish');
-elementLi2.append(elementImg2);
+elementLi2.insertAdjacentElement('afterbegin', elementImg2);
 
 
 const elementLi3 = document.createElement('li');
 const elementImg3 = document.createElement('img');
-elementImg3.setAttribute('url', 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+elementImg3.setAttribute('src', 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200');
 elementImg3.setAttribute('alt', 'Group of Horses Running');
-elementLi3.insertAdjacentHTML('afterbegin', elementImg3);
+elementLi3.insertAdjacentElement('afterbegin', elementImg3);
 
 imagesRef.append(elementLi1, elementLi2, elementLi3);
 console.log(imagesRef);

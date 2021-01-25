@@ -13,15 +13,12 @@
 // Количество элементов: 4
 
 const itemRef = document.querySelectorAll('li.item');
-console.log(itemRef);
+itemRef.forEach(item => console.log(item));
 
-// const calculateTotalItem = (itemRef) => {
-//     return itemRef
-//         .map((item) => li.item)
-//         .reduce((acc, item) => acc + item, 0)
-// };
 
-// console.log(calculateTotalItem(itemRef));
+const elRef = document.querySelectorAll('h2');
+elRef.forEach(el => console.log(el));
+
 
 
 
