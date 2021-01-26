@@ -10,16 +10,8 @@
 //   <button type="button" data-action="increment">+1</button>
 // </div>
 // }
-const makeCounter = function () {
-    let counterValue = 0;
-    return function () {
-        return counterValue++
-    }
-};
+const incrementBtnRef = document.querySelector('#counter');
 
-// const addCounter = function (num) {
-//     if (increment) {
-//         counterValue++
-//     }
-//     return counterValue;
-// };
+incrementBtnRef.addEventListener('click', (e) => {
+    console.log(e.target);
+});
