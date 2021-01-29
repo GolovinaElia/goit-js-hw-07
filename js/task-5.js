@@ -6,8 +6,9 @@ const inputRef = document.querySelector('#name-input');
 const nameLabelRef = document.querySelector('#name-output')
 
 inputRef.addEventListener('input', event => {
-    if ('input' === '') {
-       nameLabelRef.textContent = 'незнакомец';
-    };
-    nameLabelRef.textContent = event.target.value;
+     nameLabelRef.textContent = event.target.value;        
+inputRef.addEventListener('blur', () => {
+    nameLabelRef.textContent = 'незнакомец';     
 }); 
+});
+ 

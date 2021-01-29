@@ -7,12 +7,14 @@
 // Для добавления стилей, используй CSS-классы valid и invalid.
 
 const inputRef = document.querySelector('#validation-input');
-// const dataRef = document.querySelector('input[data-length="6"]');
-inputRef.addEventListener('blur', event => {
-    // const { value } = event.target.value;
-console.log(inputRef.value);
-    // if (event.target.value) {
-    //     inputRef.classList.add('#validation-input.valid');      
-    // }
-    // inputRef.classList.add('#validation-input.invalid');
-}); 
+
+inputRef.addEventListener('blur', () => {
+  console.log(inputRef.value.length);
+  if (inputRef.getAttribute('data-length') > inputRef.value.length) {
+    inputRef.classList.add('invalid');
+    inputRef.classList.remove('valid');
+  } else {
+    inputRef.classList.add('valid');
+    inputRef.classList.remove('invalid');
+  } 
+});

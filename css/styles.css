@@ -1,13 +1,16 @@
 .list {
   list-style: none;
 }
+
 .wrapper {
   display: flex;
   justify-content: space-around;
 }
+
 input {
   outline: none;
 }
+
 #validation-input {
   border: 3px solid #bdbdbd;
 }
