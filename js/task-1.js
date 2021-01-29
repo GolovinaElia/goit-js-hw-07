@@ -1,5 +1,4 @@
-//     Напиши скрипт, который выполнит следующие операции.
-
+// Напиши скрипт, который выполнит следующие операции.
 // Посчитает и выведет в консоль количество категорий в ul#categories,
 // то есть элементов li.item.Получится 'В списке 3 категории.'.
 
@@ -8,17 +7,13 @@
 // элементов в категории(всех вложенных в него элементов li).
 
 // Например для первой категории получится:
-
 // Категория: Животные
 // Количество элементов: 4
 
-const itemRef = document.querySelectorAll('li.item');
-itemRef.forEach(item => console.log(item));
-
-
-const elRef = document.querySelectorAll('h2');
-elRef.forEach(el => console.log(el));
-
-
-
-
+const elements = Array.from(document.querySelector('#categories').children);
+console.log(`В списке ${elements.length} категории.`);
+elements.forEach(elem => {
+let categoryName = elem.firstElementChild.textContent;
+let totalElem = elem.lastElementChild.children.length;
+     console.log(`Категория: ${categoryName} \ Количество элементов: ${totalElem}`);
+});
