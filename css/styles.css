@@ -6,8 +6,8 @@
   display: flex;
 }
 
-input {
-  outline: none;
+img {
+  width: 400px;
 }
 
 #validation-input {

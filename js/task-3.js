@@ -23,29 +23,10 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
-
 const imagesRef = document.querySelector('ul');
 imagesRef.classList.add('list', 'wrapper');
+images.forEach((elem) => {
+   imagesRef.insertAdjacentHTML('beforeend', `<li><img src="${elem.url}" alt="${elem.alt}"></li>`);
+});
+ console.log(imagesRef);
 
-const elementLi1 = document.createElement('li');
-const elementImg1 = document.createElement('img');
-elementImg1.setAttribute('src', 'https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200');
-elementImg1.setAttribute('alt', 'White and Black Long Fur Cat');
-elementLi1.insertAdjacentElement('afterbegin', elementImg1);
-
-
-const elementLi2 = document.createElement('li');
-const elementImg2 = document.createElement('img');
-elementImg2.setAttribute('src', 'https://images.pexels.com/photos/213399/pexels-photo-213399.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200');
-elementImg2.setAttribute('alt', 'Orange and White Koi Fish Near Yellow Koi Fish');
-elementLi2.insertAdjacentElement('afterbegin', elementImg2);
-
-
-const elementLi3 = document.createElement('li');
-const elementImg3 = document.createElement('img');
-elementImg3.setAttribute('src', 'https://images.pexels.com/photos/219943/pexels-photo-219943.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=200&w=200');
-elementImg3.setAttribute('alt', 'Group of Horses Running');
-elementLi3.insertAdjacentElement('afterbegin', elementImg3);
-
-imagesRef.append(elementLi1, elementLi2, elementLi3);
-console.log(imagesRef);
